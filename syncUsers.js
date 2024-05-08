@@ -16,7 +16,7 @@ console.log(users);
 
 async function syncAllUsers(){
     for(let user of users){
-        const res_1 = await fetch("https://api.permit.io/v2/facts/3776945a92ec4f6395e407d9a1feb472/7deb15a74b894f2995ec8cf0ec58c112/tenants/todo-tenant/users" , {
+        const res_1 = await fetch(`https://api.permit.io/v2/facts/${process.env.PERMIT_PROJECT_ID}/${process.env.PERMIT_ENV_ID}/tenants/todo-tenant/users` , {
             method : "POST",
             headers : {
                 "Content-Type" : "application/json",
@@ -35,7 +35,7 @@ async function syncAllUsers(){
     
     
     for(let user of users){
-        const res_2 = await fetch("https://api.permit.io/v2/facts/3776945a92ec4f6395e407d9a1feb472/7deb15a74b894f2995ec8cf0ec58c112/role_assignments" , {
+        const res_2 = await fetch(`https://api.permit.io/v2/facts/${process.env.PERMIT_PROJECT_ID}/${process.env.PERMIT_ENV_ID}/role_assignments` , {
             method : "POST",
             headers : {
                 "Content-Type" : "application/json",
