@@ -30,7 +30,7 @@ export default function Auth({supabase}) {
   //   if(data.session) {
       
   //     try{
-  //       const res = await fetch("http://localhost:3000/create-tenant" , {
+  //       const res = await fetch("http://localhost:3000/create-user-employee" , {
   //         method : "POST",
   //         headers : {
   //           "Content-Type" : "application/json"
