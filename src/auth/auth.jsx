@@ -40,7 +40,6 @@ export default function Auth() {
   //               headers: {
   //                   "Content-Type" : "application/json",
   //                   "Authorization" : `Bearer ${AuthHeader}`
-  //                   ,"Accept" : "*/*" , 
   //                 }, 
   //               body : JSON.stringify({
   //                   data: {
